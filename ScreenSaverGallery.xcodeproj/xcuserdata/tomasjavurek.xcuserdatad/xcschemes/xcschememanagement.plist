@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>SSGPreview.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>ScreenSaverGallery.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>51B3C96921A5F1C400356C39</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A18AB642C02211E005D24C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A5B28892BFB5D1E0034E422</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A5B28992BFB5D1F0034E422</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A5B28A32BFB5D1F0034E422</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5AE446822185B99B00E82815</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

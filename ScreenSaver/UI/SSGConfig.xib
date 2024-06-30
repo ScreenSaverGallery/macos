@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SSGConfig" customModule="ScreenSaverGallery" customModuleProvider="target">
+            <connections>
+                <outlet property="adultCheckbox" destination="XTR-9O-ttR" id="x3c-aq-FFH"/>
+                <outlet property="devModeCheckbox" destination="i3q-jx-Y1P" id="mX6-Sw-Zn7"/>
+                <outlet property="mutedCheckbox" destination="8yp-Jh-2TA" id="WQN-IE-qQB"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="BWX-12-Q0p"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titleVisibility="hidden" id="QvC-M9-y7g" customClass="NSPanel">
+            <windowStyleMask key="styleMask" resizable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2240" height="1235"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ycq-OD-U88">
+                        <rect key="frame" x="20" y="202" width="48" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ssg-icon-512" id="vFI-ug-yIa"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UX6-4c-rhr">
+                        <rect key="frame" x="389" y="19" width="71" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundRect" title="OK" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8At-Kx-cpd">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="cellTitle"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="closeConfigPane:" target="-2" id="vUI-cI-M6d"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3q-jx-Y1P">
+                        <rect key="frame" x="18" y="100" width="100" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Debug Mode" bezelStyle="regularSquare" imagePosition="left" inset="2" id="qfb-5r-OpD">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="developerModeDidChange:" target="-2" id="JUV-bE-8Xn"/>
+                        </connections>
+                    </button>
+                    <textField toolTip="Activate only if you know exactly what Debug Mode means. Otherwise, you may lose the correct behavior of ScreenSaverGallery." horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFq-NX-se2">
+                        <rect key="frame" x="20" y="46" width="440" height="48"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" allowsUndo="NO" alignment="left" drawsBackground="YES" id="yS6-I4-JuT">
+                            <font key="font" metaFont="system"/>
+                            <string key="title">Note: Activate only if you know exactly what Debug Mode means. Otherwise, you may lose the correct behavior of ScreenSaverGallery.</string>
+                            <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qqp-7x-Rjb">
+                        <rect key="frame" x="20" y="20" width="106" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="inline" title="🍓 Support Us" bezelStyle="inline" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mj6-UR-kyv">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="supportSSG:" target="-2" id="jXk-hi-OqS"/>
+                        </connections>
+                    </button>
+                    <button id="m3A-Va-E8e">
+                        <rect key="frame" x="141" y="20" width="99" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="inline" title="🥸 Talk to Us" bezelStyle="inline" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iiE-Kw-z43">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="openDiscord:" target="-2" id="h35-jn-ueN"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kiV-Ja-Ut0">
+                        <rect key="frame" x="257" y="20" width="103" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="inline" title="💥Suggest Art" bezelStyle="inline" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PVw-Jk-EHO">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="applyToCall:" target="-2" id="hVe-5j-t5R"/>
+                        </connections>
+                    </button>
+                    <button toolTip="turns off the sound if present" verticalHuggingPriority="750" id="8yp-Jh-2TA">
+                        <rect key="frame" x="81" y="231" width="100" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Mute Sound" bezelStyle="regularSquare" imagePosition="left" inset="2" id="u0r-jJ-thm">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="mutedDidChange:" target="-2" id="D9P-y3-ZDS"/>
+                        </connections>
+                    </button>
+                    <button toolTip="allow adult content if present" verticalHuggingPriority="750" id="XTR-9O-ttR">
+                        <rect key="frame" x="81" y="202" width="146" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Allow Adult Content" bezelStyle="regularSquare" imagePosition="left" inset="2" id="1cW-UQ-OQN">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="adultDidChange:" target="-2" id="I6t-ks-3uB"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="615" y="137"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="ssg-icon-512" width="512" height="512"/>
+    </resources>
+</document>

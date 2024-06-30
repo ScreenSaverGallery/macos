@@ -1,2 +1,2 @@
-# macos
+# ScreenSaverGallery
 ScreenSaverGallery for macOS

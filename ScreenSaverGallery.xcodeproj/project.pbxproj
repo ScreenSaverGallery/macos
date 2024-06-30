@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A18AB6A2C02211F005D24C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A18AB692C02211F005D24C5 /* Assets.xcassets */; };
+		5A18AB6D2C02211F005D24C5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5A18AB6C2C02211F005D24C5 /* Base */; };
+		5A18AB732C02238D005D24C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A18AB672C02211E005D24C5 /* AppDelegate.swift */; };
+		5A18AB742C022393005D24C5 /* ScreenSaverGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE446902185B9E200E82815 /* ScreenSaverGalleryView.swift */; };
+		5A18AB752C0223CD005D24C5 /* SSGConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22EB97218CDF900010054C /* SSGConfig.swift */; };
+		5A22EB96218BA8E50010054C /* 101_3515.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 5A22EB95218BA8E50010054C /* 101_3515.JPG */; };
+		5A22EB98218CDF900010054C /* SSGConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A22EB97218CDF900010054C /* SSGConfig.swift */; };
+		5A22EB9E218D1EE00010054C /* SSGConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A22EB9D218D1EE00010054C /* SSGConfig.xib */; };
+		5A84FDA32C0F021200506E74 /* NOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 5A84FDA22C0F021200506E74 /* NOTES.md */; };
+		5A8E83A421B5CC7700A33AAA /* ssg-icon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E839B21B5CC7700A33AAA /* ssg-icon-16.png */; };
+		5A8E83A621B5CC7700A33AAA /* ssg-icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E839D21B5CC7700A33AAA /* ssg-icon-1024.png */; };
+		5A8E83A721B5CC7700A33AAA /* ssg-icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E839E21B5CC7700A33AAA /* ssg-icon-512.png */; };
+		5A8E83A821B5CC7700A33AAA /* ssg-icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E839F21B5CC7700A33AAA /* ssg-icon-128.png */; };
+		5A8E83A921B5CC7700A33AAA /* ssg-icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E83A021B5CC7700A33AAA /* ssg-icon-64.png */; };
+		5A8E83AA21B5CC7700A33AAA /* ssg-icon-256.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E83A121B5CC7700A33AAA /* ssg-icon-256.png */; };
+		5A8E83AB21B5CC7700A33AAA /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E83A221B5CC7700A33AAA /* Contents.json */; };
+		5A8E83AC21B5CC7700A33AAA /* ssg-icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E83A321B5CC7700A33AAA /* ssg-icon-32.png */; };
+		5A8E83AF21B5CD5000A33AAA /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E83AD21B5CD5000A33AAA /* thumbnail.png */; };
+		5A8E83B021B5CD5000A33AAA /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8E83AE21B5CD5000A33AAA /* thumbnail@2x.png */; };
+		5A9EFEC3218A44E600B6B1C6 /* default.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AE43C2E2188995600995EB1 /* default.html */; };
+		5AC1306E2BFB969500EA6631 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC1306D2BFB969500EA6631 /* WebKit.framework */; };
+		5AC130702BFB96A000EA6631 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC1306F2BFB96A000EA6631 /* Cocoa.framework */; };
+		5AC130722BFB96AA00EA6631 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC130712BFB96AA00EA6631 /* ScreenSaver.framework */; };
+		5AC130742BFBA1EC00EA6631 /* ScreenSaverGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE446902185B9E200E82815 /* ScreenSaverGalleryView.swift */; };
+		5AF2CEC22C03563300C4BF8F /* ssg-icon-color.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5AF2CEC12C03563300C4BF8F /* ssg-icon-color.svg */; };
+		5AF512A52C12356B00FE29FE /* ssg-icon-color.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5AF2CEC12C03563300C4BF8F /* ssg-icon-color.svg */; };
+		5AF512A62C12356B00FE29FE /* 101_3515.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 5A22EB95218BA8E50010054C /* 101_3515.JPG */; };
+		5AF512A72C12356B00FE29FE /* default.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AE43C2E2188995600995EB1 /* default.html */; };
+		5AF5164D2C053A80004A4F23 /* JSScripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5164C2C053A80004A4F23 /* JSScripts.swift */; };
+		5AF5164E2C053A80004A4F23 /* JSScripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5164C2C053A80004A4F23 /* JSScripts.swift */; };
+		5AF516522C054868004A4F23 /* SSGViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF516512C054868004A4F23 /* SSGViewHelper.m */; };
+		5AF516532C054868004A4F23 /* SSGViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF516512C054868004A4F23 /* SSGViewHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A8E83BA21B5D47D00A33AAA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A18AB652C02211E005D24C5 /* SSGPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSGPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A18AB672C02211E005D24C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A18AB692C02211F005D24C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A18AB6C2C02211F005D24C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5A18AB6E2C02211F005D24C5 /* SSGPreview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SSGPreview.entitlements; sourceTree = "<group>"; };
+		5A22EB95218BA8E50010054C /* 101_3515.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 101_3515.JPG; sourceTree = "<group>"; };
+		5A22EB97218CDF900010054C /* SSGConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSGConfig.swift; sourceTree = "<group>"; };
+		5A22EB9D218D1EE00010054C /* SSGConfig.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSGConfig.xib; sourceTree = "<group>"; };
+		5A84FDA22C0F021200506E74 /* NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = NOTES.md; sourceTree = "<group>"; };
+		5A8E839B21B5CC7700A33AAA /* ssg-icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ssg-icon-16.png"; sourceTree = "<group>"; };
+		5A8E839D21B5CC7700A33AAA /* ssg-icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ssg-icon-1024.png"; sourceTree = "<group>"; };
+		5A8E839E21B5CC7700A33AAA /* ssg-icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ssg-icon-512.png"; sourceTree = "<group>"; };
+		5A8E839F21B5CC7700A33AAA /* ssg-icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ssg-icon-128.png"; sourceTree = "<group>"; };
+		5A8E83A021B5CC7700A33AAA /* ssg-icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ssg-icon-64.png"; sourceTree = "<group>"; };
+		5A8E83A121B5CC7700A33AAA /* ssg-icon-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ssg-icon-256.png"; sourceTree = "<group>"; };
+		5A8E83A221B5CC7700A33AAA /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		5A8E83A321B5CC7700A33AAA /* ssg-icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ssg-icon-32.png"; sourceTree = "<group>"; };
+		5A8E83AD21B5CD5000A33AAA /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbnail.png; path = AppIcon.appiconset/thumbnail.png; sourceTree = "<group>"; };
+		5A8E83AE21B5CD5000A33AAA /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumbnail@2x.png"; path = "AppIcon.appiconset/thumbnail@2x.png"; sourceTree = "<group>"; };
+		5A95E0FB2C0DCA0D00BF4BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5AC1306D2BFB969500EA6631 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5AC1306F2BFB96A000EA6631 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5AC130712BFB96AA00EA6631 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		5AE43C2E2188995600995EB1 /* default.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = default.html; sourceTree = "<group>"; };
+		5AE446832185B99B00E82815 /* ScreenSaverGallery.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenSaverGallery.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE4468A2185B99B00E82815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE446902185B9E200E82815 /* ScreenSaverGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSaverGalleryView.swift; sourceTree = "<group>"; };
+		5AF2CEC12C03563300C4BF8F /* ssg-icon-color.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "ssg-icon-color.svg"; sourceTree = "<group>"; };
+		5AF5164C2C053A80004A4F23 /* JSScripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSScripts.swift; sourceTree = "<group>"; };
+		5AF5164F2C054868004A4F23 /* ScreenSaverGallery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScreenSaverGallery-Bridging-Header.h"; sourceTree = "<group>"; };
+		5AF516502C054868004A4F23 /* SSGPreview-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSGPreview-Bridging-Header.h"; sourceTree = "<group>"; };
+		5AF516512C054868004A4F23 /* SSGViewHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSGViewHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A18AB622C02211E005D24C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE446802185B99B00E82815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC130722BFB96AA00EA6631 /* ScreenSaver.framework in Frameworks */,
+				5AC130702BFB96A000EA6631 /* Cocoa.framework in Frameworks */,
+				5AC1306E2BFB969500EA6631 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A18AB662C02211E005D24C5 /* SSGPreview */ = {
+			isa = PBXGroup;
+			children = (
+				5A95E0FB2C0DCA0D00BF4BCA /* Info.plist */,
+				5A18AB672C02211E005D24C5 /* AppDelegate.swift */,
+				5A18AB692C02211F005D24C5 /* Assets.xcassets */,
+				5A18AB6B2C02211F005D24C5 /* MainMenu.xib */,
+				5A18AB6E2C02211F005D24C5 /* SSGPreview.entitlements */,
+			);
+			path = SSGPreview;
+			sourceTree = "<group>";
+		};
+		5A8E839A21B5CC7700A33AAA /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E839B21B5CC7700A33AAA /* ssg-icon-16.png */,
+				5A8E839D21B5CC7700A33AAA /* ssg-icon-1024.png */,
+				5A8E839E21B5CC7700A33AAA /* ssg-icon-512.png */,
+				5A8E839F21B5CC7700A33AAA /* ssg-icon-128.png */,
+				5A8E83A021B5CC7700A33AAA /* ssg-icon-64.png */,
+				5A8E83A121B5CC7700A33AAA /* ssg-icon-256.png */,
+				5A8E83A221B5CC7700A33AAA /* Contents.json */,
+				5A8E83A321B5CC7700A33AAA /* ssg-icon-32.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		5A8E83B821B5D32D00A33AAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AC130712BFB96AA00EA6631 /* ScreenSaver.framework */,
+				5AC1306F2BFB96A000EA6631 /* Cocoa.framework */,
+				5AC1306D2BFB969500EA6631 /* WebKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A9EFEC22188A21E00B6B1C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AF2CEC12C03563300C4BF8F /* ssg-icon-color.svg */,
+				5A22EB95218BA8E50010054C /* 101_3515.JPG */,
+				5AE43C2E2188995600995EB1 /* default.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AACCD59218B686B0090A6D9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5A22EB97218CDF900010054C /* SSGConfig.swift */,
+				5A22EB9D218D1EE00010054C /* SSGConfig.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5AE446792185B99B00E82815 = {
+			isa = PBXGroup;
+			children = (
+				5A84FDA22C0F021200506E74 /* NOTES.md */,
+				5A18AB662C02211E005D24C5 /* SSGPreview */,
+				5A8E83B821B5D32D00A33AAA /* Frameworks */,
+				5AE446852185B99B00E82815 /* ScreenSaver */,
+				5A9EFEC22188A21E00B6B1C6 /* Resources */,
+				5AF516552C055135004A4F23 /* Helper */,
+				5AE446842185B99B00E82815 /* Products */,
+				5A8E83AD21B5CD5000A33AAA /* thumbnail.png */,
+				5A8E839A21B5CC7700A33AAA /* AppIcon.appiconset */,
+				5A8E83AE21B5CD5000A33AAA /* thumbnail@2x.png */,
+			);
+			sourceTree = "<group>";
+		};
+		5AE446842185B99B00E82815 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AE446832185B99B00E82815 /* ScreenSaverGallery.saver */,
+				5A18AB652C02211E005D24C5 /* SSGPreview.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AE446852185B99B00E82815 /* ScreenSaver */ = {
+			isa = PBXGroup;
+			children = (
+				5AACCD59218B686B0090A6D9 /* UI */,
+				5AE446902185B9E200E82815 /* ScreenSaverGalleryView.swift */,
+				5AE4468A2185B99B00E82815 /* Info.plist */,
+				5AF5164C2C053A80004A4F23 /* JSScripts.swift */,
+			);
+			path = ScreenSaver;
+			sourceTree = "<group>";
+		};
+		5AF516552C055135004A4F23 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5AF516512C054868004A4F23 /* SSGViewHelper.m */,
+				5AF5164F2C054868004A4F23 /* ScreenSaverGallery-Bridging-Header.h */,
+				5AF516502C054868004A4F23 /* SSGPreview-Bridging-Header.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5AE4467E2185B99B00E82815 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5A18AB642C02211E005D24C5 /* SSGPreview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A18AB6F2C02211F005D24C5 /* Build configuration list for PBXNativeTarget "SSGPreview" */;
+			buildPhases = (
+				5A18AB612C02211E005D24C5 /* Sources */,
+				5A18AB622C02211E005D24C5 /* Frameworks */,
+				5A18AB632C02211E005D24C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSGPreview;
+			packageProductDependencies = (
+			);
+			productName = SSGPreview;
+			productReference = 5A18AB652C02211E005D24C5 /* SSGPreview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AE446822185B99B00E82815 /* ScreenSaverGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE4468D2185B99B00E82815 /* Build configuration list for PBXNativeTarget "ScreenSaverGallery" */;
+			buildPhases = (
+				5AE4467E2185B99B00E82815 /* Headers */,
+				5AE4467F2185B99B00E82815 /* Sources */,
+				5AE446802185B99B00E82815 /* Frameworks */,
+				5AE446812185B99B00E82815 /* Resources */,
+				5A8E83BA21B5D47D00A33AAA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenSaverGallery;
+			packageProductDependencies = (
+			);
+			productName = SSGSwift;
+			productReference = 5AE446832185B99B00E82815 /* ScreenSaverGallery.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AE4467A2185B99B00E82815 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				ORGANIZATIONNAME = metazoa.org;
+				TargetAttributes = {
+					5A18AB642C02211E005D24C5 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					5AE446822185B99B00E82815 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1540;
+					};
+				};
+			};
+			buildConfigurationList = 5AE4467D2185B99B00E82815 /* Build configuration list for PBXProject "ScreenSaverGallery" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AE446792185B99B00E82815;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
+			productRefGroup = 5AE446842185B99B00E82815 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AE446822185B99B00E82815 /* ScreenSaverGallery */,
+				5A18AB642C02211E005D24C5 /* SSGPreview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A18AB632C02211E005D24C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF512A52C12356B00FE29FE /* ssg-icon-color.svg in Resources */,
+				5AF512A62C12356B00FE29FE /* 101_3515.JPG in Resources */,
+				5AF512A72C12356B00FE29FE /* default.html in Resources */,
+				5A18AB6A2C02211F005D24C5 /* Assets.xcassets in Resources */,
+				5A18AB6D2C02211F005D24C5 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE446812185B99B00E82815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A8E83A821B5CC7700A33AAA /* ssg-icon-128.png in Resources */,
+				5A8E83B021B5CD5000A33AAA /* thumbnail@2x.png in Resources */,
+				5A22EB96218BA8E50010054C /* 101_3515.JPG in Resources */,
+				5A8E83A921B5CC7700A33AAA /* ssg-icon-64.png in Resources */,
+				5A8E83AC21B5CC7700A33AAA /* ssg-icon-32.png in Resources */,
+				5A8E83A721B5CC7700A33AAA /* ssg-icon-512.png in Resources */,
+				5A8E83AA21B5CC7700A33AAA /* ssg-icon-256.png in Resources */,
+				5AF2CEC22C03563300C4BF8F /* ssg-icon-color.svg in Resources */,
+				5A8E83A421B5CC7700A33AAA /* ssg-icon-16.png in Resources */,
+				5A8E83AB21B5CC7700A33AAA /* Contents.json in Resources */,
+				5A8E83A621B5CC7700A33AAA /* ssg-icon-1024.png in Resources */,
+				5A9EFEC3218A44E600B6B1C6 /* default.html in Resources */,
+				5A84FDA32C0F021200506E74 /* NOTES.md in Resources */,
+				5A22EB9E218D1EE00010054C /* SSGConfig.xib in Resources */,
+				5A8E83AF21B5CD5000A33AAA /* thumbnail.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A18AB612C02211E005D24C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF516532C054868004A4F23 /* SSGViewHelper.m in Sources */,
+				5A18AB742C022393005D24C5 /* ScreenSaverGalleryView.swift in Sources */,
+				5A18AB732C02238D005D24C5 /* AppDelegate.swift in Sources */,
+				5AF5164E2C053A80004A4F23 /* JSScripts.swift in Sources */,
+				5A18AB752C0223CD005D24C5 /* SSGConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4467F2185B99B00E82815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC130742BFBA1EC00EA6631 /* ScreenSaverGalleryView.swift in Sources */,
+				5A22EB98218CDF900010054C /* SSGConfig.swift in Sources */,
+				5AF5164D2C053A80004A4F23 /* JSScripts.swift in Sources */,
+				5AF516522C054868004A4F23 /* SSGViewHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A18AB6B2C02211F005D24C5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A18AB6C2C02211F005D24C5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A18AB702C02211F005D24C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SSGPreview/SSGPreview.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = Z7X3VW7Z7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SSGPreview/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenSaverGalleryPreview;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 metazoa.org. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.metazoa.ssg.preview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Helper/SSGPreview-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5A18AB712C02211F005D24C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SSGPreview/SSGPreview.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = Z7X3VW7Z7S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SSGPreview/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenSaverGalleryPreview;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 metazoa.org. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.metazoa.ssg.preview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Helper/SSGPreview-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5AE4468B2185B99B00E82815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = singlefile;
+			};
+			name = Debug;
+		};
+		5AE4468C2185B99B00E82815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5AE4468E2185B99B00E82815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = Z7X3VW7Z7S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/ScreenSaver/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.metazoa.screensavergallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_SWIFT_SYMBOLS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Helper/ScreenSaverGallery-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		5AE4468F2185B99B00E82815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = Z7X3VW7Z7S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/ScreenSaver/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.metazoa.screensavergallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_SWIFT_SYMBOLS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Helper/ScreenSaverGallery-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A18AB6F2C02211F005D24C5 /* Build configuration list for PBXNativeTarget "SSGPreview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A18AB702C02211F005D24C5 /* Debug */,
+				5A18AB712C02211F005D24C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE4467D2185B99B00E82815 /* Build configuration list for PBXProject "ScreenSaverGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4468B2185B99B00E82815 /* Debug */,
+				5AE4468C2185B99B00E82815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE4468D2185B99B00E82815 /* Build configuration list for PBXNativeTarget "ScreenSaverGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4468E2185B99B00E82815 /* Debug */,
+				5AE4468F2185B99B00E82815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AE4467A2185B99B00E82815 /* Project object */;
+}
