@@ -9,7 +9,7 @@ Artworks in the ScreenSaverGallery are curated to add a new dimension by placing
 ## Installation
 ### For Developers: 
 1. Clone the repository: ```git clone https://github.com/ScreenSaverGallery/macos.git```
-2. Open the project in Xcode and build the screensaver.
+2. Open the project in Xcode (v16.0 or later) and build the screensaver.
 > Note: You must add `Info.plist` files to `ScreenSaver` and `SSGPreview` directories to set the `SSG_URL` and `SSG_URL_DEV` parameters. These urls are not yet publicly available as the content is subject to further development. If you want to participate on ScreenSaverGallery project, feel free to contact us to get the active urls. If you want to use this code for your own needs, set up urls of your choice.
 ### For Users:
 1. Go to [ScreenSaverGallery](https://screensaver.gallery/get) website
