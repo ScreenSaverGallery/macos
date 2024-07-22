@@ -40,6 +40,8 @@ class ScreenSaverGalleryView: ScreenSaverView, WKNavigationDelegate, WKScriptMes
         makeWebView()
         // setup notifications
         setNotifications()
+        // set version to config window
+        setVersionToConfig()
     }
     
     required init?(coder: NSCoder) {
@@ -53,6 +55,8 @@ class ScreenSaverGalleryView: ScreenSaverView, WKNavigationDelegate, WKScriptMes
         makeWebView()
         // setup notifications
         setNotifications()
+        // set version to config window
+        setVersionToConfig()
     }
     
     deinit {
@@ -171,16 +175,29 @@ class ScreenSaverGalleryView: ScreenSaverView, WKNavigationDelegate, WKScriptMes
             ssgWebView = nil
         }
     }
-    
+
+    // set special navigator params
+    private func setId(id: String) {
+        print("setId", id)
+        let js: String = "navigator.id = '\(id)'"
+        ssgWebView.evaluateJavaScript(js)
+    }
     private func setMuted(muted: Bool) {
         let js: String = "navigator.muted = \(muted)"
         ssgWebView.evaluateJavaScript(js, completionHandler: nil)
     }
     
-    private func setAdult(adult: Bool) {
-        let js: String = "navigator.adult = \(adult)"
+    private func setSensitive(sensitive: Bool) {
+        let js: String = "navigator.sensitive = \(sensitive)"
         ssgWebView.evaluateJavaScript(js, completionHandler: nil)
     }
+
+    
+    private func setVoiceOver(voiceOver: Bool) {
+        let js: String = "navigator.voiceOver = \(voiceOver)"
+        ssgWebView.evaluateJavaScript(js, completionHandler: nil)
+    }
+    
     // override default document.hidden = true
     private func unhideDocument() {
         let js: String = "document.hidden = false"
@@ -298,13 +315,23 @@ class ScreenSaverGalleryView: ScreenSaverView, WKNavigationDelegate, WKScriptMes
     }
     
     private func setSSGUserAgentConfig() {
+
+        setId(id: screenSaverGalleryConfig.id)
         setMuted(muted: screenSaverGalleryConfig.muted)
-        setAdult(adult: screenSaverGalleryConfig.adult)
+        setSensitive(sensitive: screenSaverGalleryConfig.sensitive)
+        setVoiceOver(voiceOver: screenSaverGalleryConfig.voiceOver)
         unhideDocument()
     }
     
     // GET PARAMS FROM BUNDLES
     // bundle version
+    
+   func setVersionToConfig() {
+       if ((screenSaverGalleryConfig.versionTextField) != nil) {
+            screenSaverGalleryConfig.versionTextField.stringValue = "v\(bundleVersion) (\(bundleBuild))"
+        }
+        
+    }
     var bundleVersion: String = {
         if let version = Bundle(identifier: "org.metazoa.screensavergallery")?.infoDictionary?["CFBundleShortVersionString"] as? String {
             return version

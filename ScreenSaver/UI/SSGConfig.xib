@@ -8,9 +8,11 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="SSGConfig" customModule="ScreenSaverGallery" customModuleProvider="target">
             <connections>
-                <outlet property="adultCheckbox" destination="XTR-9O-ttR" id="x3c-aq-FFH"/>
                 <outlet property="devModeCheckbox" destination="i3q-jx-Y1P" id="mX6-Sw-Zn7"/>
                 <outlet property="mutedCheckbox" destination="8yp-Jh-2TA" id="WQN-IE-qQB"/>
+                <outlet property="sensitiveCheckbox" destination="XTR-9O-ttR" id="AOA-Ex-Pol"/>
+                <outlet property="versionTextField" destination="cXN-mA-wVk" id="Amm-US-RHn"/>
+                <outlet property="voiceOverCheckbox" destination="ZdV-fC-rmF" id="Dfz-HG-E44"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="BWX-12-Q0p"/>
             </connections>
         </customObject>
@@ -25,11 +27,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ycq-OD-U88">
-                        <rect key="frame" x="20" y="202" width="48" height="48"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ssg-icon-512" id="vFI-ug-yIa"/>
-                    </imageView>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UX6-4c-rhr">
                         <rect key="frame" x="389" y="19" width="71" height="19"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -52,7 +49,7 @@
                             <action selector="developerModeDidChange:" target="-2" id="JUV-bE-8Xn"/>
                         </connections>
                     </button>
-                    <textField toolTip="Activate only if you know exactly what Debug Mode means. Otherwise, you may lose the correct behavior of ScreenSaverGallery." horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFq-NX-se2">
+                    <textField toolTip="Activate only if you know exactly what Debug Mode means. Otherwise, you may lose the correct behavior of ScreenSaverGallery." focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFq-NX-se2">
                         <rect key="frame" x="20" y="46" width="440" height="48"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textFieldCell key="cell" allowsUndo="NO" alignment="left" drawsBackground="YES" id="yS6-I4-JuT">
@@ -95,6 +92,17 @@
                             <action selector="applyToCall:" target="-2" id="hVe-5j-t5R"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZdV-fC-rmF">
+                        <rect key="frame" x="81" y="174" width="141" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Activate VoiceOver" bezelStyle="regularSquare" imagePosition="left" inset="2" id="XWa-Tn-Exs">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="voiceOverDidChange:" target="-2" id="wKX-bh-VpS"/>
+                        </connections>
+                    </button>
                     <button toolTip="turns off the sound if present" verticalHuggingPriority="750" id="8yp-Jh-2TA">
                         <rect key="frame" x="81" y="231" width="100" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -107,20 +115,38 @@
                         </connections>
                     </button>
                     <button toolTip="allow adult content if present" verticalHuggingPriority="750" id="XTR-9O-ttR">
-                        <rect key="frame" x="81" y="202" width="146" height="18"/>
+                        <rect key="frame" x="81" y="202" width="169" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="check" title="Allow Adult Content" bezelStyle="regularSquare" imagePosition="left" inset="2" id="1cW-UQ-OQN">
+                        <buttonCell key="cell" type="check" title="Allow Sensitive Content" bezelStyle="regularSquare" imagePosition="left" inset="2" id="1cW-UQ-OQN">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="adultDidChange:" target="-2" id="I6t-ks-3uB"/>
+                            <action selector="sensitiveDidChange:" target="-2" id="qBi-ju-6GP"/>
                         </connections>
                     </button>
+                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXN-mA-wVk">
+                        <rect key="frame" x="387" y="237" width="75" height="13"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" id="S9s-hc-uQf">
+                            <font key="font" metaFont="system" size="10"/>
+                            <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ycq-OD-U88">
+                        <rect key="frame" x="20" y="187" width="48" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ssg-icon-512" id="vFI-ug-yIa"/>
+                    </imageView>
                 </subviews>
             </view>
             <point key="canvasLocation" x="615" y="137"/>
         </window>
+        <buttonCell type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" controlSize="small" inset="2" id="Igs-2v-XjY">
+            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+            <font key="font" metaFont="smallSystem"/>
+        </buttonCell>
     </objects>
     <resources>
         <image name="ssg-icon-512" width="512" height="512"/>

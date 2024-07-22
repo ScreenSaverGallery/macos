@@ -16,14 +16,17 @@ class ScreenSaverGalleryConfig: NSObject {
     // shared instance
     static let sharedInstance = ScreenSaverGalleryConfig()
     //
-    
+    let idKey: String = "id"
     let devModeKey: String = "ssgDevMode"
     let mutedKey: String = "muted"
-    let adultKey: String = "adult"
+    let sensitiveKey: String = "sensitive"
+    let voiceOverKey: String = "voiceOver"
     // defaults
+    var id: String = UUID().uuidString.lowercased()
     var developerMode: Bool = false // default
     var muted: Bool = false
-    var adult: Bool = false
+    var sensitive: Bool = false
+    var voiceOver: Bool = false
     
     
     lazy var userDefaults: UserDefaults = {
@@ -40,9 +43,10 @@ class ScreenSaverGalleryConfig: NSObject {
     @IBOutlet var window: NSPanel!
     @IBOutlet weak var devModeCheckbox: NSButton!
     @IBOutlet weak var mutedCheckbox: NSButton!
-    @IBOutlet weak var adultCheckbox: NSButton!
+    @IBOutlet weak var sensitiveCheckbox: NSButton!
+    @IBOutlet weak var voiceOverCheckbox: NSButton!
     @IBOutlet weak var checkForUpdateButton: NSButton!
-    
+    @IBOutlet weak var versionTextField: NSTextField!
     
     
     override init() {
@@ -50,16 +54,32 @@ class ScreenSaverGalleryConfig: NSObject {
         let bundle = Bundle(for: ScreenSaverGalleryConfig.self)
         bundle.loadNibNamed("SSGConfig", owner: self, topLevelObjects: nil)
         // load defaults and set developerMode
-        userDefaults.register(defaults: [devModeKey: developerMode, mutedKey: muted, adultKey: adult])
+        userDefaults.register(defaults: [
+            id: id,
+            devModeKey: developerMode,
+            mutedKey: muted,
+            sensitiveKey: sensitive,
+            voiceOverKey: voiceOver
+        ])
         loadDefaults()
+        // print("version",)
     }
     
     
     @objc fileprivate func loadDefaults() {
         // get saved defaults for devMode
+        var id: String = userDefaults.string(forKey: idKey) ?? ""
         let devMode: Bool = userDefaults.bool(forKey: devModeKey)
         let mutedDef: Bool = userDefaults.bool(forKey: mutedKey)
-        let adultDef: Bool = userDefaults.bool(forKey: adultKey)
+        let sensitiveDef: Bool = userDefaults.bool(forKey: sensitiveKey)
+        let voiceOverDef: Bool = userDefaults.bool(forKey: voiceOverKey)
+    
+        if (id.count == 0) {
+            id = self.id
+            saveStringToDefaults(key: idKey, value: id)
+        } else {
+            self.id = id
+        }
         
         if (devMode == true) {
             developerMode = true
@@ -76,17 +96,27 @@ class ScreenSaverGalleryConfig: NSObject {
             muted = false
         }
         
-        if (adultDef == true) {
-            adult = true
-            adultCheckbox.setNextState()
+        if (sensitiveDef == true) {
+            sensitive = true
+            sensitiveCheckbox.setNextState()
         } else {
-            adult = false
+            sensitive = false
         }
         
+        if (voiceOverDef == true) {
+            voiceOver = true
+            voiceOverCheckbox.setNextState()
+        } else {
+            voiceOver = false
+        }
         
     }
     
     @objc fileprivate func saveToDefaults(key: String, value: Bool) {
+        userDefaults.set(value, forKey: key)
+    }
+    
+    @objc fileprivate func saveStringToDefaults(key: String, value: String) {
         userDefaults.set(value, forKey: key)
     }
     
@@ -101,9 +131,14 @@ class ScreenSaverGalleryConfig: NSObject {
         saveToDefaults(key: mutedKey, value: muted)
     }
     
-    @objc fileprivate func toggleAdult() {
-        adult = !adult
-        saveToDefaults(key: adultKey, value: adult)
+    @objc fileprivate func toggleSensitive() {
+        sensitive = !sensitive
+        saveToDefaults(key: sensitiveKey, value: sensitive)
+    }
+    
+    @objc fileprivate func toggleVoiceOver() {
+        voiceOver = !voiceOver
+        saveToDefaults(key: voiceOverKey, value: voiceOver)
     }
     
     @IBAction func closeConfigPane(_ sender: NSButton) {
@@ -120,9 +155,14 @@ class ScreenSaverGalleryConfig: NSObject {
         toggleMuted()
     }
     
-    @IBAction func adultDidChange(_ sender: NSButton) {
-        toggleAdult()
+    @IBAction func sensitiveDidChange(_ sender: NSButton) {
+        toggleSensitive()
     }
+    
+    @IBAction func voiceOverDidChange(_ sender: NSButton) {
+        toggleVoiceOver()
+    }
+   
     
     @IBAction func supportSSG(_ sender: NSButton) {
         if let url = URL(string: "https://screensaver.gallery/support-us?app=mac") {
